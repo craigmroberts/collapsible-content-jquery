@@ -1,8 +1,7 @@
 jQuery-Collapsible-Content
 ==========================
 
- 
-The script has these features.
+ This script allows users to create collapsible contents with ease. Some of the features are;
  
 -          Singular collapsible elements.
 -          Group collapsible elements.
