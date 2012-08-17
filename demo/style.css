@@ -1,0 +1,20 @@
+html {padding:5px}
+.collapse {margin:20px 5px}
+.hide { display:none}
+
+.collapse label{ display:block;background:url('images/layout/global/arrow_state_grey_right.png') no-repeat right;color:#41403C;cursor:pointer;border:1px solid #c4c4c4;padding:8px ;text-align:left}
+
+.collapsible label.open {background:url('images/layout/global/arrow_state_grey_expanded.png') no-repeat right;}
+
+.collapse div, .collapse li {list-style: none; padding:5px 8px;background:#ddd}
+
+
+.group .collapse {margin-top:0;margin-bottom:0}
+
+.grp_0 .collapse label{ background:url('images/layout/global/arrow_state_grey_right.png') no-repeat right #3e3e3e;color:#fff}
+
+.grp_0 .collapse label .open {background:url('images/layout/global/arrow_state_grey_expanded.png') no-repeat right #3e3e3e;}
+
+
+
+​
