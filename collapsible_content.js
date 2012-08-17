@@ -1,5 +1,6 @@
 var CMR_Collapse = CMR_Collapse || {};
 
+
 CMR_Collapse.run = function(noJS) {
     var i = 0;
     for (i; i < $('.group').length; i++) {
