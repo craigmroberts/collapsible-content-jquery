@@ -1,6 +1,6 @@
-var CMR_Collapse = CMR_Collapse || {};
+var Collapsible = Collapsible || {};
 
-CMR_Collapse.run = function(noJS) {
+Collapsible.run = function(noJS) {
     var i = 0;
     for (i; i < $('.group').length; i++) {
         $('.group:eq(' + i + ')').addClass('grp_' + i + '');
@@ -17,15 +17,15 @@ CMR_Collapse.run = function(noJS) {
             }
         }
     }
-    $('.collapse label').bind('click', CMR_Collapse.collapse);
+    $('.collapse label').bind('click', Collapsible.collapse);
 };
 
-CMR_Collapse.toggle = function($el) {
+Collapsible.toggle = function($el) {
     $el.toggleClass('open');
     $el.next().toggleClass('hide');
 };
 
-CMR_Collapse.inGroup = function($el) {
+Collapsible.inGroup = function($el) {
     $el = $el.parent().parent();
     if ($el.hasClass('group')) {
         var grp = $el.attr('class').split(' ')[1];
@@ -35,17 +35,17 @@ CMR_Collapse.inGroup = function($el) {
     }
 };
 
-CMR_Collapse.collapse = function(e) {
+Collapsible.collapse = function(e) {
     var $el = $(e.target);
 
     if ($el.parent().children().length > 1) {
 
         if ($el.hasClass('open')) {
-            CMR_Collapse.toggle($el);
+            Collapsible.toggle($el);
         }
         else {
-            CMR_Collapse.inGroup($el);
-            CMR_Collapse.toggle($el);
+            Collapsible.inGroup($el);
+            Collapsible.toggle($el);
         }
     }
 };
