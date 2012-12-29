@@ -6,75 +6,75 @@
 </head>
 
 <body>
-<p>Single collapsible element</p>
-<ul class="collapse">
-        <label>Filter items</label>
-        <li class='hide'>
+ 
+
+<h1>Collapsible elements</h1>
+
+    <ul  class="collapse">
+        <li id="head" >Single collapsible</li>
+        <li id="content" class='hide'>
             asdsdsad
         </li>
-</ul>        
-        
-<p>Group collapsible elements</p>
+    </ul>
+   
+
+
 <br />
 <div class=" group">
-
-<ul  class="collapse">
-        <label class="hide">Filter 1</label>
-        <li class='hide'>
+    <ul  class="collapse">
+        <li id="head" >Title 1</li>
+        <li id="content" class='hide'>
             asdsdsad
         </li>
-</ul>  
-
-<ul class="collapse">
-        <label class='open'>Filter 2</label>
-        <li>
+    </ul>
+    <ul class="collapse">
+        <li id="head" class='open'>Title 2</li>
+        <li id="content">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </li>
+    </ul>
+    <ul class="collapse">
+        <li id="head">Title 3</li>
+        <li id="content" class='hide'>
             asdsdsad
         </li>
-</ul>  
-
-<ul class="collapse">
-        <label>Filter 3</label>
-        <li class='hide'>
-            asdsdsad
-        </li>
-</ul>  
-
-
+    </ul>  
 </div>
 
-<br />
-<br />
+<h2>Group 2</h2>
 
-<div class="group">
-
-<div class="collapse">
-        <label>Filter 1</label>
-        <div>
+<div class=" group">
+    <ul  class="collapse">
+        <li id="head" >Title 1</li>
+        <li id="content" class='hide'>
             asdsdsad
-        </div>
-</div>  
-
-<div class="collapse">
-        <label>Filter 2</label>
-        <div>
+        </li>
+    </ul>
+    <ul class="collapse">
+        <li id="head">Title 2</li>
+        <li id="content">
+            <br />        
+        </li>
+    </ul>
+    <ul class="collapse">
+        <li id="head">Title 3</li>
+        <li id="content" class='hide'>
             asdsdsad
-        </div>
-</div>  
-
-<div class="collapse">
-        <label>Filter 3</label>
-        <div>
-            asdsdsad
-        </div>
-</div>  
-
-
+        </li>
+    </ul>  
 </div>
+
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="../jquery.collapsible.js" type="text/javascript"></script>
 <script>
-//Run script
-Collapsible.run(1);
-</script>
-​</body>
+jQuery('label').collapsible({
+    safe: true,
+    event: 'click',
+    indicators: true,
+    indi_pos: 'right',
+    auto_scroll: true,
+    auto_scroll_speed: 700
+});
+</script></body>
 </html>
