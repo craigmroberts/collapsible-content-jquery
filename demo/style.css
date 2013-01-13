@@ -1,36 +1,100 @@
-* {padding:0;margin:0;font-family:Arial}
-h1 {background:#3e3e3e;color:white;text-align:center;font-size:24px;padding:10px}
-h2 {margin-top:10px;padding:10px}
-
-
-
-.collapse .hide {display:none}
-
-.collapse {margin:20px 5px;list-style:none}
-.collapse li#head { display:block;color:#41403C;cursor:pointer;border:1px solid #c4c4c4;padding:8px;text-align:left}
-.collapse li#head.open {}
-.collapse li#head.close {}
-.collapse li#head span {float:right;font-weight:bold;font-size:12px}
-.collapse li#content {}
-
+* {
+  padding:0;
+  margin:0;
+  font-family:Arial
+}
+h1 {
+  background:#3e3e3e;
+  color:white;
+  text-align:center;
+  font-size:24px;
+  padding:10px
+}
+h2 {
+  margin-top:10px;
+  padding:10px
+}
+.group ul.first li {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
+}
+.group ul.last li, .group ul.last li.open #content {
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.group ul.first li#content {
+  border-radius:0
+}
+.group ul.last li.open {
+  border-radius:0
+}
+.collapse .hide {
+  display:none
+}
+.collapse {
+  margin:20px 5px;
+  list-style:none
+}
+.collapse li#head {
+  display:block;
+  color:#41403C;
+  cursor:pointer;
+  border:1px solid #c4c4c4;
+  padding:8px;
+  text-align:left
+}
+.collapse li#head.open {
+}
+.collapse li#head.close {
+}
+.collapse li#head span {
+  float:right;
+  font-weight:bold;
+  font-size:12px
+}
+.collapse li#content {
+}
 /* Hidden content */
-.collapse li {padding:5px 8px;background:#ddd}
-
+ .collapse li {
+  padding:5px 8px;
+  background:#ddd
+}
 /* All group styles */
-.group .collapse {margin-top:0;margin-bottom:0}
-.group .collapse li#head {}
-.group .collapse li#head.open {}
-.group .collapse li#head.close {}
-.group .collapse li#head span {}
-.group .collapse li#content {}
-
+ .group .collapse {
+  margin-top:0;
+  margin-bottom:0
+}
+.group .collapse li#head {
+}
+.group .collapse li#head.open {
+}
+.group .collapse li#head.close {
+}
+.group .collapse li#head span {
+}
+.group .collapse li#content {
+}
 /* Style groups individually */
-.grp_0 .collapse {}
-.grp_0 .collapse li#head { background:#3e3e3e;color:#fff}
-.grp_0 .collapse li#head.open {background:#3e3e3e;}
-.grp_0 .collapse li#head.close {}
-.grp_0 .collapse li#head span {}
-.grp_0 .collapse li#content {}
-
-
-​
+ .grp_0 .collapse {
+}
+.grp_0 .collapse li#head {
+  background:#3e3e3e;
+  color:#fff
+}
+.grp_0 .collapse li#head.open {
+  background:#3e3e3e;
+}
+.grp_0 .collapse li#head.close {
+}
+.grp_0 .collapse li#head span {
+}
+.grp_0 .collapse li#content {
+}
